@@ -1,8 +1,11 @@
 package com.dimap;
 
-public interface Observer {
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+public interface Observer extends Remote {
 	
-	public void notificar(String m);
-	public String meuId ();
+	public void updateEvents(String m) throws RemoteException;
+	//public String myId ();
 
 }

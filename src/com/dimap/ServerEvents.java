@@ -1,10 +1,12 @@
 package com.dimap;
 
 import java.rmi.Remote;
+import java.rmi.RemoteException;
 
 public interface ServerEvents extends Remote{
 	
-	public void add (Observer o);
-	public void notificarSubscriber (String notificacao);
+	public void register (Observer o) throws RemoteException;
+	
+	public void notificarSubscriber (String notificacao) throws RemoteException;
 
 }
