@@ -20,7 +20,7 @@ System.setProperty("java.rmi.server.hostname","127.0.0.1");
 		
 		Naming.rebind("rmi://127.0.0.1:1098/ServerEvents", server);
 		
-		System.out.println("RMI Callback Server Starterd.");
+		System.out.println("RMI Callback Server Starterd.\nPronto para usar");
 		
 	}
 
